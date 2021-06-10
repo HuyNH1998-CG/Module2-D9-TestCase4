@@ -1,14 +1,16 @@
-public class FizzBuzz {
-    public static String print(int number) {
+public class FizzBuzzTranslate {
+    public static String translate(int number) {
         boolean isDivisibleBy3 = number % 3 == 0;
         boolean isDivisibleBy5 = number % 5 == 0;
         StringBuilder outcome = new StringBuilder();
 
         if (isDivisibleBy3 && isDivisibleBy5) {
             return "FizzBuzz";
-        } else if (isDivisibleBy5) {
+        }
+        else if (isDivisibleBy5) {
             return "Buzz";
-        } else if (isDivisibleBy3) {
+        }
+        else if (isDivisibleBy3) {
             return "Fizz";
         }
 
